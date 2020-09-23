@@ -1,0 +1,335 @@
+:root {
+    --basic-red: #EE3643;
+    --basic-green: #63A63E;
+    --basic-grey: #32425C;
+    --basic-grey-dark: #293449;
+    --basic-greylight: #C5C5C5;
+    --basic-background: #F3F7F9;
+    --basic-black: #000000;
+    --basic-yellow: #FFD180;
+    --white: #FFFFFF;
+    --grey-background: #F1F5F7;
+    --basic-beige: #F9F5F0;
+    --promo-yellow: #FFBF47;
+    --promo-blue: #3BBCE3;
+    --promo-green: #8ED78F;
+    --promo-violet: #DC91D8;
+    --error: #BA2732;
+    --special-red: #CA2C37;
+    --success: #5FBB2D;
+}
+
+body {
+    min-width: 940px;
+    font-family: "Cuprum", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: normal;
+    font-style: normal;
+    color: var(--basic-grey);
+    background-color: var(--white);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*header*/
+
+.main-header {
+    background: var(--basic-background);
+}
+
+.main-navigation {
+    background: var(--basic-grey);
+    color: var(--white);
+    box-shadow: inset 0px -5px 0px #293449;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.site-navigation {
+    list-style: none;
+}
+
+.user-navigation {
+    background: var(--basic-grey);
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.main-navigation a,
+.user-navigation a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.contacts-phone {
+    color: var(--basic-red);
+    text-decoration: none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 30px;
+}
+
+.main-header-slogan {
+    font-family: Cuprum;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+    color: var(--basic-red);
+}
+.order {
+    background-color: var(--basic-green);
+}
+.order:hover {
+    background-color: var(--success);
+}
+
+
+/*main*/
+
+.promo-list,
+.goods-list,
+.popular-manufacturers-list {
+    list-style: none;
+}
+
+.promo-item {
+    font-family: Cuprum;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: var(--white);
+    background-color: var(--promo-yellow);
+}
+
+.tools {
+    background-color: var(--promo-blue);
+}
+
+.technics {
+    background-color: var(--promo-violet);
+}
+
+.discount {
+    background-color: var(--promo-green);
+}
+
+.promo-slider {
+    background-color: var(--basic-grey);
+    color: var(--white);
+}
+
+.promo-item p {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.promo-item a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.slider-item {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.moto {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.popular-goods-header,
+.popular-manufacturers-header {
+    background-color: var(--basic-beige);
+    color: var(--basic-grey);
+}
+
+.goods-item h3 {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    color: var(--basic-black);
+}
+
+.goods-item:hover {
+    filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+}
+
+.popular-goods-header h2,
+.popular-manufacturers-header h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 30px;
+    color: var(--basic-grey);
+}
+
+.popular-manufacturers-item a:hover {
+    filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+}
+
+.popular-manufacturers-item a:active {
+    opacity: 0.5;
+    filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15))
+}
+.services h2,
+.about h2,
+.contacts h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 30px;
+    color: var(--basic-black);
+}
+.services h3 {
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 30px;
+    color: var(--basic-grey);
+}
+
+.services {
+    background-color: var(--grey-background);
+}
+
+.services-list {
+    list-style: none;
+}
+
+.services-item a {
+    background-color: var(--basic-grey);
+    font-family: Cuprum;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 30px;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.services-item a:hover {
+    background-color: var(--basic-grey-dark);
+}
+
+.services-item a:active {
+    background-color: var(--white);
+    color: var(--basic-grey);
+}
+
+.transport-company-item {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.transport-company-item a {
+    color: var(--basic-black);
+    text-decoration: none;
+}
+
+
+/*Footer*/
+
+.footer-main-navigation,
+.footer-sub-navigation {
+    list-style: none;
+}
+
+.footer-navigation {
+    background-color: var(--basic-grey);
+    color: var(--white);
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.footer-bottom {
+    background-color: var(--basic-grey-dark);
+    color: var(--white);
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.footer-main-navigation a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.footer-sub-navigation a {
+    color: var(--basic-yellow);
+    text-decoration: none;
+}
+
+.mailto,
+.academy {
+    color: var(--basic-yellow);
+    text-decoration: none;
+}
+
+.footer-main-navigation a:hover,
+.footer-sub-navigation a:hover,
+.mailto:hover,
+.academy:hover {
+    text-decoration: underline;
+}
+
+.mailto:active,
+.academy:active {
+    color: var(--basic-red);
+    text-decoration: none;
+}
+
+.social-list {
+    list-style: none;
+}
+
+.social-button {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.social-button:hover,
+.social-button:active {
+    color: var(--basic-red);
+}
+
+.button {
+    font: inherit;
+    text-align: center;
+    color: var(--white);
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color: var(--basic-red);
+    border: none;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.button:hover {
+    background-color: var(--special-red);
+}
+
+.button:active {
+    background-color: var(--error);
+}
+
+.services p,
+.about p,
+.contacts p {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 24px;
+    color: var(--basic-black);
+}
