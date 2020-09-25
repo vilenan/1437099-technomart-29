@@ -67,6 +67,13 @@ img {
     color: var(--white);
     text-decoration: none;
 }
+.logo-container {
+    background-color: var(--basic-red);
+    width: 220px;
+    height: 47px;
+    box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+    text-align: center;
+}
 
 .contacts-phone {
     color: var(--basic-red);
@@ -122,6 +129,9 @@ img {
     background-color: var(--promo-green);
 }
 
+.visually-hidden {
+    display: none;
+}
 .promo-slider {
     background-color: var(--basic-grey);
     color: var(--white);
@@ -239,6 +249,13 @@ img {
 
 
 /*Footer*/
+.logo-container-footer {
+    background-color: var(--basic-red);
+    width: 220px;
+    height: 68px;
+    box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+    text-align: center;
+}
 
 .footer-main-navigation,
 .footer-sub-navigation {
@@ -291,7 +308,7 @@ img {
 .social-list {
     list-style: none;
 }
-
+/*
 .social-button {
     color: var(--white);
     text-decoration: none;
@@ -301,7 +318,7 @@ img {
 .social-button:active {
     color: var(--basic-red);
 }
-
+*/
 .button {
     font: inherit;
     text-align: center;
