@@ -103,6 +103,20 @@ img {
     background-color: var(--success);
 }
 
+.login-link,
+.registration {
+    font-family: Cuprum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 21px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.0001);
+    background-color: var(--white);
+    color: var(--basic-black);
+    border: none;
+}
+
 
 /*main*/
 
