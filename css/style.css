@@ -37,22 +37,43 @@ img {
     max-width: 100%;
     height: auto;
 }
+/*grid*/
 
-
+.page {
+    height: 100%;
+}
+.page-body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
+}
 /*header*/
 
 .main-header {
     background: var(--basic-background);
+    margin-bottom: 59px;
 }
 
+.header-content-wrapper {
+    width: 940px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+}
 .main-navigation {
     background: var(--basic-grey);
     color: var(--white);
     box-shadow: inset 0px -5px 0px #293449;
     font-size: 18px;
     line-height: 24px;
+    order: 4;
 }
-
+.wrapper-contacts {
+    order: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr max-content max-content;
+}
 .site-navigation {
     list-style: none;
 }
@@ -61,6 +82,8 @@ img {
     background: var(--basic-grey);
     font-size: 18px;
     line-height: 24px;
+    grid-row-start: 1;
+    grid-column-start: 1;
 }
 
 .main-navigation a,
@@ -75,6 +98,9 @@ img {
     height: 47px;
     box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
     text-align: center;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    z-index: 1;
 }
 
 .contacts-phone {
@@ -119,11 +145,23 @@ img {
 
 
 /*main*/
+.container {
+    width: 940px;
+    margin: 0 auto;   
+}
 
 .promo-list,
 .goods-list,
 .popular-manufacturers-list {
+    margin: 0;
+    padding: 0;
     list-style: none;
+}
+.promo-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap:  20px;
 }
 
 .promo-item {
@@ -134,17 +172,32 @@ img {
     color: var(--white);
     background-color: var(--promo-yellow);
 }
+.materials {
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
 
 .tools {
     background-color: var(--promo-blue);
+    grid-column-start: 2;
+    grid-row-start: 1;
 }
 
 .technics {
     background-color: var(--promo-violet);
+    grid-column-start: 3;
+    grid-row-start: 1;
 }
 
 .discount {
     background-color: var(--promo-green);
+    grid-column-start: 3;
+    grid-row-start: 2;
+    
+}
+.delivery {
+    grid-column-start: 3;
+    grid-row-start: 3;
 }
 
 .visually-hidden {
@@ -154,6 +207,10 @@ img {
 .promo-slider {
     background-color: var(--basic-grey);
     color: var(--white);
+    /*grid-column-start: 1;
+    grid-row-start: 2;
+    grid-column-end 3;
+    grid-row-end: -1;*/
 }
 
 .promo-item p {
@@ -184,7 +241,11 @@ img {
     background-color: var(--basic-beige);
     color: var(--basic-grey);
 }
-
+.goods-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
 .goods-item h3 {
     font-family: "PT Sans", Arial, sans-serif;
     font-style: normal;
@@ -197,7 +258,11 @@ img {
 .goods-item:hover {
     filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
 }
-
+.popular-manufacturers-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap:  20px;
+}
 .popular-goods-header h2,
 .popular-manufacturers-header h2 {
     text-transform: uppercase;
@@ -268,9 +333,22 @@ img {
     color: var(--basic-black);
     text-decoration: none;
 }
-
+.about-contacts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 
 /*Footer*/
+.main-footer {
+   margin-top: 70px; 
+}
+.footer-navigation-bar {
+    background-color: var(--basic-grey);
+}
+.footer-bottom-bar {
+   background-color: var(--basic-grey-dark); 
+}
+
 
 .logo-container-footer {
     background-color: var(--basic-red);
@@ -283,20 +361,31 @@ img {
 .footer-main-navigation,
 .footer-sub-navigation {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .footer-navigation {
-    background-color: var(--basic-grey);
+    width: 940px;
+    margin: 0 auto;
     color: var(--white);
     font-size: 18px;
     line-height: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
-
+.footer-contacts {
+    order: 1;
+}
+.footer-sub-navigation {
+    order: 2;
+}
 .footer-bottom {
-    background-color: var(--basic-grey-dark);
     color: var(--white);
     font-size: 16px;
     line-height: 18px;
+    width: 940px;
+    margin: 0 auto;
 }
 
 .footer-main-navigation a {
@@ -330,8 +419,13 @@ img {
 
 .social-list {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
-
+.footer-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 
 /*
 .social-button {
