@@ -45,17 +45,25 @@
        <div class="inner-page container">
         <ul class="breadcrumbs">
             <li>
-                <a href="index.html"><img src="img/icon-home.svg" alt="Главная"></a>
+                <a href="index.html">
+                    <img src="img/icon-home.svg" alt="Главная">
+                </a>
             </li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="blank.html">Инструмент</a></li>
-            <li><a href="!#">Перфораторы</a></li>
+            <li>
+                <a href="catalog.html">Каталог</a>
+            </li>
+            <li>
+                <a href="blank.html">Инструмент</a>
+            </li>
+            <li>
+                <a class="current-breadcrumbs" href="!#">Перфораторы</a>
+            </li>
         </ul>
          <div class="title-container">
             <h1 class="page-title">Перфораторы</h1> 
         </div>
         <section class="filters">
-            <h2>Фильтр:</h2>
+            <div class="filters-title"><h2>Фильтр:</h2></div>
             <form class="filter" method="get" action="https://echo.htmlacademy.ru">
                 <fieldset>
                     <legend>Цена:</legend>
@@ -86,7 +94,7 @@
                         </li>
                     </ul>
                 </fieldset>
-                <fieldset>
+                <fieldset class="last">
                     <legend>Питание:</legend>
                     <ul>
                         <li class="filter-option filter-radio">
@@ -105,9 +113,9 @@
         <section class="sort">
           <h2>Сортировка:</h2>
           <ul class="sort-list">
-            <li><a href="#">по цене</a></li>
-            <li><a href="#">по типу</a></li>
-            <li><a href="#">по функционалу</a></li>
+            <li><a class="sort-item sort-current" href="#">по цене</a></li>
+            <li><a class="sort-item" href="#">по типу</a></li>
+            <li><a class="sort-item" href="#">по функционалу</a></li>
           </ul>
         </section>
         <section class="catalog">
@@ -115,7 +123,7 @@
             <ul class="catalog-list">
                 <li class="catalog-item">
                     <article class="card card-1">
-                        <img src="img/bosch600.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+                        <div class="product-image"> <img src="img/bosch600.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000"></div>
                         <h3>Перфоратор BOSCH BFG 6000</h3> 
                         <div class="product-price">25500 P.</div>
                     </article>
@@ -131,7 +139,8 @@
                 
                 <li class="catalog-item">
                    <article class="card card-1">
-                        <img src="img/bosch600.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+                       <div class="product-image"> 
+                           <img src="img/bosch600.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000"></div>
                         <h3>Перфоратор BOSCH BFG 6000</h3> 
                         <div class="product-price">25500 P.</div>
                     </article>
@@ -146,7 +155,8 @@
                 </li>
                 <li class="catalog-item">
                    <article class="card card-1">
-                        <img src="img/bosch600.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+                       <div class="product-image"> 
+                           <img src="img/bosch600.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000"></div>
                         <h3>Перфоратор BOSCH BFG 6000</h3> 
                         <div class="product-price">25500 P.</div>
                     </article>
@@ -161,7 +171,8 @@
                 </li>
                 <li class="catalog-item">
                    <article class="card card-1">
-                        <img src="img/bosch3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
+                       <div class="product-image"> 
+                           <img src="img/bosch3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000"></div>
                         <h3>Перфоратор BOSCH BFG 2000</h3> 
                         <div class="product-price">12500 P.</div>
                     </article>
@@ -176,7 +187,8 @@
                 </li>
                 <li class="catalog-item">
                    <article class="card card-1">
-                        <img src="img/bosch3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
+                       <div class="product-image"> 
+                           <img src="img/bosch3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000"></div>
                         <h3>Перфоратор BOSCH BFG 3000</h3> 
                         <div class="product-price">15500 P.</div>
                     </article>
@@ -191,7 +203,8 @@
                 </li>
                 <li class="catalog-item">
                    <article class="card card-1">
-                        <img src="img/bosch600.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+                       <div class="product-image"> 
+                           <img src="img/bosch600.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000"></div>
                         <h3>Перфоратор BOSCH BFG 6000</h3> 
                         <div class="product-price">25500 P.</div>
                     </article>
@@ -206,7 +219,8 @@
                 </li>
                 <li class="catalog-item">
                    <article class="card card-1">
-                        <img src="img/bosch600.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+                       <div class="product-image"> 
+                           <img src="img/bosch600.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000"></div>
                         <h3>Перфоратор BOSCH BFG 6000</h3> 
                         <div class="product-price">25500 P.</div>
                     </article>
@@ -221,7 +235,8 @@
                 </li>
                 <li class="catalog-item">
                    <article class="card card-1">
-                        <img src="img/bosch3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
+                       <div class="product-image"> 
+                           <img src="img/bosch3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000"></div>
                         <h3>Перфоратор BOSCH BFG 2000</h3> 
                         <div class="product-price">12500 P.</div>
                     </article>
