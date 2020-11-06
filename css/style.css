@@ -195,6 +195,14 @@ img {
 
 .main-navigation a {
     padding: 16px 20px;
+    display: block;
+}
+.main-navigation a:hover,
+.main-navigation a:active {
+    background-color: var(--basic-grey-dark);
+}
+.main-navigation a:active {
+    opacity: 0.5;
 }
 
 .logo-container {
@@ -266,7 +274,10 @@ img {
 .order:hover {
     background-color: var(--success);
 }
-
+.order:active { 
+    background-color: var(--basic-green);
+    color: rgba(255, 255, 255, 0.5);
+}
 .login-link,
 .registration {
     font-family: Cuprum;
@@ -280,9 +291,7 @@ img {
     color: var(--basic-black);
     border: none;
     position: relative;
-    height: 45px;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding: 12px 24px;
 }
 
 .login-link {
@@ -1084,7 +1093,6 @@ img {
 .user-name::before {
     content: "";
     width: 20px;
-    ;
     height: 18px;
     position: absolute;
     left: 15px;
@@ -1101,13 +1109,30 @@ img {
     bottom: 14px;
     background-image: url("../img/icon-logout.svg")
 }
+.user-name:hover::before,
+.user-name:hover::after
+{
+    opacity: 0.5;
+}
+.user-name:active {
+    color: var(--basic-greylight);
+}
 
 .user-account {
     display: flex;
     justify-content: center;
     color: var(--basic-grey);
 }
-
+.user-account a:hover,
+.login-link:hover,
+.registration:hover {
+    color: var(--basic-red);
+}
+.user-account a:active,
+.login-link:active,
+.registration:active {
+    color: var(--basic-greylight);
+}
 .dott {
     background-color: var(--basic-grey);
     border-radius: 50%;
@@ -1115,7 +1140,12 @@ img {
     height: 4px;
     margin: auto 13px;
 }
-
+.dott:hover {
+    background-color: var(--basic-red);
+}
+.dott:active {
+    background-color: var(--basic-greylight);
+}
 .user-account a {
     text-decoration: none;
     color: var(--basic-grey);
@@ -1501,7 +1531,7 @@ img {
 
 .pagination-item a:hover {
     border: 1px solid var(--basic-greylight);
-}c
+}
 
 .pagination-item a:active {
     border: 1px solid var(--basic-red);
@@ -1562,6 +1592,7 @@ img {
     background-color: var(--white);
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
     border-top: 7px solid var(--basic-red);
+    z-index: 4;
 }
 
 .modal-login {
