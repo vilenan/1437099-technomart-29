@@ -326,6 +326,7 @@ img {
 
 .item-new {
     position: relative;
+    overflow: hidden;
 }
 
 .item-new::before {
@@ -343,6 +344,7 @@ img {
     color: var(--white);
     background-color: var(--basic-red);
     transform: rotate(45deg);
+    z-index: 3;
 }
 
 .promo-list {
@@ -633,6 +635,10 @@ img {
     object-fit: contain;
     height: 164px;
 }
+.first-layer{
+ display: flex;
+    align-items: center;
+    justify-content: center;}
 
 .price {
     width: 120px;
@@ -1495,7 +1501,7 @@ img {
 
 .pagination-item a:hover {
     border: 1px solid var(--basic-greylight);
-}
+}c
 
 .pagination-item a:active {
     border: 1px solid var(--basic-red);
