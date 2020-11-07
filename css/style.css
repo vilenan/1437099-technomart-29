@@ -1699,3 +1699,6 @@ textarea {
 .modal-map iframe {
     border: none;
 }
+.modal-show {
+    display: block;
+}
