@@ -1263,7 +1263,6 @@ img {
     padding-bottom: 25px;
 }
 
-
 /*ползунок*/
 
 .range-controls {
@@ -1368,6 +1367,13 @@ img {
     height: 23px;
     background-image: url(../img/checkbox-on.svg)
 }
+/*окрашиваем чекбокс при наведении*/
+.filter-input-checkbox:hover+label::before,
+.filter-input-checkbox:focus+label::before
+{
+    opacity: 0.5;
+}
+
 
 .filter-input-radio + label::before {
     content: "";
@@ -1389,6 +1395,13 @@ img {
     height: 9px;
     background-color: #C5C5C5;
     border-radius: 50%;
+}
+/*окрашиваем радио при наведении*/
+.filter-input-radio:hover+label::before{
+     border: 4px solid #B5B5B5;
+}
+.filter-input-radio:hover+label::after{
+     background-color: #B5B5B5;
 }
 
 .filter .last {
@@ -1437,7 +1450,10 @@ img {
     display: block;
     color: rgba(0, 0, 0, 0.3);
 }
-
+.sort-item:hover {
+    color: var(--basic-black);
+    text-decoration-style: solid;
+}
 .sorting-arrows-list-container {
     margin: auto;
 }
@@ -1447,12 +1463,15 @@ img {
     justify-content: space-between;
     align-items: center;
 }
-
+.sorting-arrow:hover {
+     border-bottom-color: var(--basic-black);
+}
 .sorting-arrows-list .sort-item {
     margin-right: 0;
 }
 
-.sort-current {
+.sort-current,
+.sort-current:hover{
     color: var(--basic-red);
     text-decoration: none;
 }
