@@ -437,13 +437,15 @@ img {
 }
 
 .promo-slider-1 {
-    background-image: url("../img/dreli.jpg");
+    background-image: url("../img/perforator.jpg");
+    background-color: var(--basic-grey);
     margin: 0;
     padding: 0;
 }
 
 .promo-slider-2 {
     background-color: var(--basic-grey);
+    background-image: url("../img/dreli.jpg");
     margin: 0;
     padding: 0;
 }
