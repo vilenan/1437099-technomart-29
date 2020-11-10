@@ -92,7 +92,7 @@ img {
 }
 
 .header-contacts {
-    width: 300px;
+    width: 340px;
 }
 
 .site-navigation {
@@ -129,6 +129,7 @@ img {
     width: 17px;
     height: 17px;
     background-image: url("../img/icon-search.svg");
+    background-repeat: no-repeat;
     margin-right: 8px;
     opacity: 0.3;
 }
@@ -151,7 +152,7 @@ img {
 .bookmarks {
     display: flex;
     margin-left: 15px;
-    margin-right: 15px;
+    margin-right: 35px;
 }
 
 .bookmarks::before {
@@ -159,6 +160,7 @@ img {
     width: 17px;
     height: 17px;
     background-image: url("../img/icon-bookmark.svg");
+    background-repeat: no-repeat;
     margin-right: 8px;
     opacity: 0.3;
 }
@@ -166,7 +168,7 @@ img {
 .basket {
     display: flex;
     margin-left: 15px;
-    margin-right: 15px;
+    margin-right: 27px;
 }
 
 .basket::before {
@@ -174,13 +176,14 @@ img {
     width: 17px;
     height: 17px;
     background-image: url("../img/icon-cart.svg");
+    background-repeat: no-repeat;
     margin-right: 8px;
     opacity: 0.3;
 }
 
 .order {
     display: flex;
-    padding: 0 15px;
+    padding: 0 17px;
 }
 
 .user-navigation a {
@@ -217,7 +220,8 @@ img {
 }
 
 .logo-container a {
-    margin: auto;
+    display: block;
+    padding: 12px 56px 17px;
 }
 
 .contacts-phone {
@@ -256,7 +260,7 @@ img {
 }
 
 .main-header-slogan {
-    font-family: Cuprum;
+    font-family: "Cuprum", Arial, sans-serif;
     font-style: italic;
     font-weight: normal;
     font-size: 16px;
@@ -284,7 +288,7 @@ img {
 
 .login-link,
 .registration {
-    font-family: Cuprum;
+    font-family: "Cuprum", Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 21px;
@@ -374,7 +378,7 @@ img {
 }
 
 .promo-item {
-    font-family: Cuprum;
+    font-family: "Cuprum", Arial, sans-serif;
     font-weight: bold;
     font-size: 24px;
     color: var(--white);
@@ -438,13 +442,11 @@ img {
 
 .promo-slider-1 {
     background-image: url("../img/perforator.jpg");
-    background-color: var(--basic-grey);
     margin: 0;
     padding: 0;
 }
 
 .promo-slider-2 {
-    background-color: var(--basic-grey);
     background-image: url("../img/dreli.jpg");
     margin: 0;
     padding: 0;
@@ -574,7 +576,7 @@ img {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 21px 18px;
+    padding: 0px 18px 21px;
     box-sizing: border-box;
     border: 1px solid #EAEAEA;
     min-height: 324px;
@@ -650,14 +652,19 @@ img {
     margin: 0;
     object-fit: contain;
     height: 164px;
+   
+   
 }
 
 .first-layer {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
+    margin-bottom: 13px;
 }
-
+.second-layer {
+     margin-top: 13px;
+}
 .price {
     width: 120px;
     height: 38px;
@@ -706,7 +713,10 @@ img {
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
 
-.popular-goods,
+.popular-goods{
+    margin-bottom: 67px; 
+}
+
 .popular-manufacturers {
     margin-bottom: 70px;
 }
@@ -795,22 +805,21 @@ img {
     position: absolute;
     width: 10px;
     height: 279px;
-    left: 240px;
+    left: 230px;
     top: -45px;
-    background-image: linear-gradient(to right, transparent, black);
-    opacity: 0.25;
+    background-image: url(../img/shadow.png);
 }
 
 .services-item a {
     background-color: var(--basic-grey);
-    font-family: Cuprum;
+    font-family: "Cuprum", Arial, sans-serif;
     font-weight: bold;
     font-size: 21px;
     line-height: 30px;
     color: var(--white);
     text-decoration: none;
     display: block;
-    padding: 13px 80px 17px 22px;
+    padding: 14px 80px 18px 22px;
 }
 
 .services-item a:hover {
@@ -893,7 +902,7 @@ img {
     margin-top: auto;
     cursor: pointer;
 }
-
+.map {padding-top: 10px;}
 
 /*Footer*/
 
@@ -923,9 +932,10 @@ img {
     width: 220px;
     height: 68px;
     box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+.logo-container-footer a {
+    display: block;
+    padding: 20px 41px 25px;
 }
 .logo-container:active,
 .logo-container-footer:active {
@@ -943,11 +953,11 @@ img {
 }
 
 .footer-main-navigation {
-    margin-top: 35px;
+    margin-top: 39px;
 }
 
 .footer-sub-navigation {
-    margin-top: 15px;
+    margin-top: 14px;
 }
 
 .footer-navigation {
@@ -958,13 +968,15 @@ img {
     line-height: 24px;
     display: grid;
     grid-template-columns: 340px 1fr;
-    padding-bottom: 30px;
+    padding-bottom: 35px;
 }
 
 .footer-contacts {
     order: 1;
 }
-
+.footer-contacts p {
+    margin-top: 10px;
+}
 .footer-sub-navigation {
     order: 2;
 }
@@ -987,11 +999,12 @@ img {
 
 .mailto {
     width: 140px;
-    margin-right: 51px;
+    margin-right: 48px;
 }
 
 .academy {
     width: 100px;
+    margin-right: 10px;
 }
 
 .mailto-link,
@@ -1099,7 +1112,7 @@ img {
     background-color: var(--white);
     padding: 12px 56px;
     margin-top: 46px;
-    font-family: Cuprum;
+    font-family: "Cuprum", Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 21px;
@@ -1185,7 +1198,7 @@ img {
 }
 
 .page-title {
-    font-family: Cuprum;
+    font-family: "Cuprum", Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
@@ -1220,7 +1233,7 @@ img {
 
 .breadcrumbs a {
     text-decoration: none;
-    font-family: PT Sans;
+    font-family: "PT Sans", Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
@@ -1270,7 +1283,7 @@ img {
 }
 
 .filter legend {
-    font-family: PT Sans;
+    font-family: "PT Sans", Arial, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 17px;
@@ -1365,7 +1378,7 @@ img {
     display: block;
     cursor: pointer;
     user-select: none;
-    font-family: PT Sans;
+    font-family: "PT Sans", Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
@@ -1568,7 +1581,7 @@ img {
     display: flex;
     margin: 0;
     padding: 0;
-    padding-top: 28px;
+    padding-top: 20px;
 }
 
 .pagination-item {
@@ -1583,7 +1596,9 @@ img {
     padding: 10px 15px;
     display: block;
 }
-
+.last-pagination a{
+   padding: 10px 32px; 
+}
 .pagination-item a:hover {
     border: 1px solid var(--basic-greylight);
 }
@@ -1595,7 +1610,7 @@ img {
 .sort h2,
 .filters h2,
 .pagination-item a {
-    font-family: PT Sans;
+    font-family: "PT Sans", Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
@@ -1611,7 +1626,7 @@ img {
 }
 
 .catalog-item h3 {
-    font-family: PT Sans;
+    font-family: "PT Sans", Arial, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -1620,7 +1635,7 @@ img {
 }
 
 .product-information .container {
-    padding: 64px 0 64px;
+    padding: 64px 0 58px;
 }
 
 .visually-hidden {
@@ -1749,7 +1764,7 @@ textarea {
 }
 
 .add-to-cart {
-    font-family: Cuprum;
+    font-family: "Cuprum", Arial, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
