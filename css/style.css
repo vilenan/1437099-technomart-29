@@ -86,13 +86,9 @@ img {
 .wrapper-contacts {
     order: 2;
     display: grid;
-    grid-template-columns: 1fr 1fr max-content max-content;
+    grid-template-columns: 1fr 1fr max-content;
     width: inherit;
     height: 158px;
-}
-
-.header-contacts {
-    width: 340px;
 }
 
 .site-navigation {
